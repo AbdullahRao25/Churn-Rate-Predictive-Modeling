@@ -2,9 +2,9 @@
 
 # Telco Customer Churn Prediction
 
-![Churn Prediction](https://img.shields.io/badge/Type-Machine_Learning-blue) 
-![Python](https://img.shields.io/badge/Python-3.8%2B-green)
-![License](https://img.shields.io/badge/License-MIT-orange)
+![Churn Prediction](https://img.shields.io/badge/Type-Machine_Learning-blue)  
+![Python](https://img.shields.io/badge/Python-3.8%2B-green)  
+![License](https://img.shields.io/badge/License-MIT-orange)  
 
 A machine learning project to predict customer churn for a telecommunications company.
 
@@ -51,47 +51,50 @@ Key features used in the model:
 - `TechSupport`: Whether the customer has tech support
 - And other service-related features
 
+## Installation
 
-
+```bash
 git clone https://github.com/yourusername/telco-churn-prediction.git
 cd telco-churn-prediction
+```
 
-Methodology
-Data Preprocessing
-Handled missing values in TotalCharges
+## Usage
 
-Encoded categorical variables using Label Encoding
+Make sure you have Python 3.8+ installed, along with the required packages. Then run the main script to train and evaluate the model.
 
-Scaled numerical features using StandardScaler
+## Methodology
 
-Feature Selection
-Used Sequential Feature Selection with Logistic Regression
+### Data Preprocessing
+- Handled missing values in `TotalCharges`
+- Encoded categorical variables using `LabelEncoder`
+- Scaled numerical features using `StandardScaler`
 
-Selected 9 most important features
+### Feature Selection
+- Used `Sequential Feature Selection` with `Logistic Regression`
+- Selected 9 most important features
 
-Model Building
-Implemented Random Forest Classifier
+### Model Building
+- Implemented `Random Forest Classifier`
+- Used `RandomizedSearchCV` for hyperparameter tuning
+- Addressed class imbalance using `SMOTE` oversampling
 
-Used RandomizedSearchCV for hyperparameter tuning
+### Evaluation Metrics
+- **Accuracy**: 77.25%
+- **Precision**, **Recall**, and **F1-score** evaluated
 
-Addressed class imbalance using SMOTE oversampling
+## Results
 
-Evaluation Metrics
-Accuracy: 77.25%
-
-Precision, Recall, and F1-score
-
-Results
 The optimized Random Forest model achieved:
 
-Metric	Score
-Accuracy	77.25%
-Precision	0.63
-Recall	0.54
-F1-Score	0.58
+| Metric     | Score  |
+|------------|--------|
+| Accuracy   | 77.25% |
+| Precision  | 0.63   |
+| Recall     | 0.54   |
+| F1-Score   | 0.58   |
+
 The model can help identify approximately 77% of potential churn cases correctly, allowing the business to target retention efforts more effectively.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## License
 
-
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
