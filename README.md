@@ -51,10 +51,8 @@ Key features used in the model:
 - `TechSupport`: Whether the customer has tech support
 - And other service-related features
 
-## Installation
 
-1. Clone the repository:
-```bash
+
 git clone https://github.com/yourusername/telco-churn-prediction.git
 cd telco-churn-prediction
 
