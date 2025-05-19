@@ -58,4 +58,42 @@ Key features used in the model:
 git clone https://github.com/yourusername/telco-churn-prediction.git
 cd telco-churn-prediction
 
+Methodology
+Data Preprocessing
+Handled missing values in TotalCharges
+
+Encoded categorical variables using Label Encoding
+
+Scaled numerical features using StandardScaler
+
+Feature Selection
+Used Sequential Feature Selection with Logistic Regression
+
+Selected 9 most important features
+
+Model Building
+Implemented Random Forest Classifier
+
+Used RandomizedSearchCV for hyperparameter tuning
+
+Addressed class imbalance using SMOTE oversampling
+
+Evaluation Metrics
+Accuracy: 77.25%
+
+Precision, Recall, and F1-score
+
+Results
+The optimized Random Forest model achieved:
+
+Metric	Score
+Accuracy	77.25%
+Precision	0.63
+Recall	0.54
+F1-Score	0.58
+The model can help identify approximately 77% of potential churn cases correctly, allowing the business to target retention efforts more effectively.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
 
