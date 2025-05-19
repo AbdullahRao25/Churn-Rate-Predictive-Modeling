@@ -89,9 +89,9 @@ The optimized Random Forest model achieved:
 | Metric     | Score  |
 |------------|--------|
 | Accuracy   | 77.25% |
-| Precision  | 0.63   |
-| Recall     | 0.54   |
-| F1-Score   | 0.58   |
+| Precision  | 63 %   |
+| Recall     | 54 %   |
+| F1-Score   | 58 %   |
 
 The model can help identify approximately 77% of potential churn cases correctly, allowing the business to target retention efforts more effectively.
 
